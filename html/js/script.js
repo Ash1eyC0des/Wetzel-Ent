@@ -702,11 +702,11 @@
 
 			$(document).ready(function() {
 
-				var myCenter = new google.maps.LatLng(30.3459488, -97.7145152);
+				var myCenter = new google.maps.LatLng(40.48542404174805, -75.5938949584961);
 
 				function loadMap() {
 				  	var mapProp = {
-					    center: new google.maps.LatLng(30.3459488, -97.6545152),
+					    center: new google.maps.LatLng(40.48542404174805, -75.5938949584961),
 					    zoom:13,
 					    mapTypeId:google.maps.MapTypeId.ROADMAP
 
@@ -723,7 +723,7 @@
 		            var marker = new google.maps.Marker({
 		               position:myCenter,
 		               map: map,
-		               icon: 'images/map_marker.png'
+		               icon: data.marker || 'images/map_marker.png'
 		            });
 		            
 		            marker.setMap(map);
@@ -745,7 +745,7 @@
 
 			function loadMap() {
 				var mapProp = {
-					center: { lat: 45.947129, lng: 10.925227 },
+					center: { lat: 40.48542404174805, lng: -75.5938949584961 }, 
 					zoom: 13,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
